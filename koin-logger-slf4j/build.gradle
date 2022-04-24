@@ -10,4 +10,4 @@ dependencies {
     api "org.slf4j:slf4j-api:1.7.33"
 }
 
-apply from: '../../gradle/publish-to-central.gradle'
+apply from: '../gradle/publish-to-central.gradle'

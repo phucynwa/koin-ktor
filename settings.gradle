@@ -3,3 +3,5 @@
 include 'koin-logger-slf4j'
 include 'koin-ktor'
 
+// Exemples
+include 'examples:hello-ktor'
