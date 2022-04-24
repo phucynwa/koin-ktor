@@ -1,6 +1,5 @@
 buildscript {
     apply from: "./gradle/versions.gradle"
-//    apply from: "../gradle/versions-android.gradle"
 
     repositories {
         mavenLocal()
@@ -29,7 +28,7 @@ allprojects {
     }
 
     group = 'io.insert-koin'
-    version = "$koin_version"
+    version = "$koin_ktor_version"
 
     // Dokka
     apply plugin: 'org.jetbrains.dokka'
