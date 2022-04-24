@@ -1,9 +1,9 @@
 apply plugin: 'kotlin'
 
 dependencies {
-    api(project(":multimodule-ktor:common"))
-    api(project(":multimodule-ktor:module-a"))
-    api(project(":multimodule-ktor:module-b"))
+    api(project(":examples:multimodule-ktor:common"))
+    api(project(":examples:multimodule-ktor:module-a"))
+    api(project(":examples:multimodule-ktor:module-b"))
 
     implementation "io.insert-koin:koin-ktor:$koin_version"
     implementation "io.insert-koin:koin-logger-slf4j:$koin_version"

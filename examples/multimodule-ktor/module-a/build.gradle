@@ -1,7 +1,7 @@
 apply plugin: 'kotlin'
 
 dependencies {
-    implementation project(":multimodule-ktor:common")
+    implementation project(":examples:multimodule-ktor:common")
 
     testImplementation "io.insert-koin:koin-test:$koin_version"
     testImplementation "io.insert-koin:koin-test-junit4:$koin_version"
