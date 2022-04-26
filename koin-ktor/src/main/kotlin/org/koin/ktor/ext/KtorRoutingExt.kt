@@ -15,7 +15,7 @@
  */
 package org.koin.ktor.ext
 
-import io.ktor.routing.*
+import io.ktor.server.routing.Routing
 import org.koin.core.context.GlobalContext
 import org.koin.core.parameter.ParametersDefinition
 import org.koin.core.qualifier.Qualifier

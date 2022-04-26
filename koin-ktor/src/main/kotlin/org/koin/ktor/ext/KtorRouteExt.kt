@@ -15,7 +15,7 @@
  */
 package org.koin.ktor.ext
 
-import io.ktor.routing.*
+import io.ktor.server.routing.Route
 import org.koin.core.context.GlobalContext
 import org.koin.core.parameter.ParametersDefinition
 import org.koin.core.qualifier.Qualifier
@@ -53,7 +53,7 @@ inline fun <reified T : Any> Route.get(
  * Retrieve given property for KoinComponent
  * @param key - key property
  */
-fun <T: Any> Route.getProperty(key: String) =
+fun <T : Any> Route.getProperty(key: String) =
     getKoin().getProperty<T>(key)
 
 /**

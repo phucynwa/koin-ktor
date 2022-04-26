@@ -15,7 +15,7 @@
  */
 package org.koin.ktor.ext
 
-import io.ktor.application.*
+import io.ktor.server.application.ApplicationCall
 import org.koin.core.context.GlobalContext
 import org.koin.core.parameter.ParametersDefinition
 import org.koin.core.qualifier.Qualifier
@@ -52,7 +52,7 @@ inline fun <reified T : Any> ApplicationCall.get(
  * Retrieve given property for KoinComponent
  * @param key - key property
  */
-fun <T: Any> ApplicationCall.getProperty(key: String) =
+fun <T : Any> ApplicationCall.getProperty(key: String) =
     getKoin().getProperty<T>(key)
 
 /**

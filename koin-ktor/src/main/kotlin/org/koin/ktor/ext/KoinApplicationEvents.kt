@@ -15,11 +15,11 @@
  */
 package org.koin.ktor.ext
 
-import io.ktor.application.EventDefinition
+import io.ktor.events.EventDefinition
 import org.koin.core.KoinApplication
 
 /**
- * @author Victor Alenkov
+ * @author Phuc YNWA
  */
 
 /**
